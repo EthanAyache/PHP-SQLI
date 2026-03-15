@@ -165,7 +165,7 @@
             <button class="button1" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button>
             <button class="button2">Sign Up</button>
         </div>
-        <button class="button3">Forgot Password  </button>
+        <button class="button3" type="button" onclick="window.location.href='menfou.php'">Forgot Password</button>
     </form>
 </div>
 

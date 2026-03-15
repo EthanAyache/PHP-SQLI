@@ -34,10 +34,10 @@ $result = $conn->query($sql);
 <body>
 
     <div class="button-container">
-        <button class="brutalist-button openai">
+        <form action="login.php" method="GET">
+        <button class="brutalist-button openai" type="submit">
             <div class="openai-logo">
-                <a href="login.php">
-                <svg
+                <svg 
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     class="openai-icon">
@@ -51,6 +51,7 @@ $result = $conn->query($sql);
                 <span>GPT-Omni</span>
             </div>
         </button>
+        </form>
     </div>
 
 
@@ -78,7 +79,6 @@ $result = $conn->query($sql);
             <div class="section-title">Véhicules disponibles</div>
             <div class="vehicle-cards">
                 <?php
-                // Réinitialiser le pointeur de résultat
                 $result_list->data_seek(0);
                 if ($result_list && $result_list->num_rows > 0):
                 ?>
